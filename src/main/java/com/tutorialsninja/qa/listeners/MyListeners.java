@@ -87,5 +87,11 @@ public class MyListeners implements ITestListener {
 		}
 		
 	}
+
+	@Override
+	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 }

@@ -22,24 +22,26 @@ public class Base {
 	public Base() {
 		
 		prop = new Properties();
-		File propFile = new File(System.getProperty("user.dir")+"\\src\\main\\java\\com\\tutorialsninja\\qa\\config\\config.properties");
+		//File propFile = new File(\\src\\main\\java\\com\\tutorialsninja\\qa\\config\\config.properties");
+		try {
+			FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\com\\tutorialsninja\\qa\\config\\config.properties");
+			prop.load(fis);
+		}catch(Throwable e) {
+			e.printStackTrace();
+		}
+		
 		
 		dataProp = new Properties();
-		File dataPropFile = new File(System.getProperty("user.dir")+"\\src\\main\\java\\com\\tutorialsninja\\qa\\testdata\\testdata.properties");
+		//File dataPropFile = new File(System.getProperty("user.dir")+"\\src\\main\\java\\com\\tutorialsninja\\qa\\testdata\\testdata.properties");
 		
 		try {
-			FileInputStream dataFis = new FileInputStream(dataPropFile);
+			FileInputStream dataFis = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\com\\tutorialsninja\\qa\\testdata\\testdata.properties");
 			dataProp.load(dataFis);
 		}catch(Throwable e) {
 			e.printStackTrace();
 		}
 		
-		try {
-			FileInputStream fis = new FileInputStream(propFile);
-			prop.load(fis);
-		}catch(Throwable e) {
-			e.printStackTrace();
-		}
+		
 		
 	}
 	

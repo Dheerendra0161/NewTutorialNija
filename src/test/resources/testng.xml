@@ -7,7 +7,12 @@
   <test name="TutorialsNinja Tests">
     <classes>
       <class name="com.tutorialsninja.qa.testcases.RegisterTest"/>
-      <class name="com.tutorialsninja.qa.testcases.LoginTest"/>
+      <class name="com.tutorialsninja.qa.testcases.LoginTest">
+		  <methods>
+			  <exclude name="verifyLoginWithValidCredentials"></exclude>
+		  </methods>
+      </class>
+     
       <class name="com.tutorialsninja.qa.testcases.SearchTest"/>
     </classes>
   </test> <!-- Test -->

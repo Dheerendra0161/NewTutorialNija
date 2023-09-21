@@ -21,6 +21,7 @@ public class LoginPage {
 	@FindBy(xpath="//div[contains(@class,'alert-dismissible')]")
 	private WebElement emailPasswordNotMatchingWarning;
 	
+	
 	public LoginPage(WebDriver driver) {
 		
 		this.driver = driver;
@@ -40,12 +41,14 @@ public class LoginPage {
 		
 	}
 	
+	
 	public AccountPage clickOnLoginButton() {
 		
 		loginButton.click();
 		return new AccountPage(driver);
 		
 	}
+	
 	
 	public AccountPage login(String emailText,String passwordText) {
 		
@@ -55,6 +58,7 @@ public class LoginPage {
 		return new AccountPage(driver);
 		
 	}
+	
 	
 	public String retrieveEmailPasswordNotMatchingWarningMessageText() {
 		

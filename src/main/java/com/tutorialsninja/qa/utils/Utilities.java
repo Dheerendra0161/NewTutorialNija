@@ -24,7 +24,7 @@ public class Utilities {
 		
 		Date date = new Date();
 		String timestamp = date.toString().replace(" ","_").replace(":","_");
-		return "amotoori"+timestamp+"@gmail.com";
+		return "dheeruvish678"+timestamp+"@gmail.com";
 		
 	}
 	

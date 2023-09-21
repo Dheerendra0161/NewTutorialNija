@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>TutorialsNinja Tests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/14</td>
+<td>Tests passed/Failed/Skipped:</td><td>9/1/1</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Sep 18 11:35:12 IST 2023</td>
+<td>Started on:</td><td>Thu Sep 21 15:38:04 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>17 seconds (17204 ms)</td>
+<tr><td>Total time:</td><td>61 seconds (61323 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,1090 +68,114 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.RegisterTest.setup()'><b>setup</b><br>Test class: com.tutorialsninja.qa.testcases.RegisterTest</td>
-<td><div><pre>java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
-	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:148)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
-	at com.tutorialsninja.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:50)
-	at com.tutorialsninja.qa.testcases.RegisterTest.setup(RegisterTest.java:29)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace69329761", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace69329761'><pre>java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
-	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:148)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
-	at com.tutorialsninja.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:50)
-	at com.tutorialsninja.qa.testcases.RegisterTest.setup(RegisterTest.java:29)
+<td title='com.tutorialsninja.qa.testcases.SearchTest.verifySearchWithInvalidProduct()'><b>verifySearchWithInvalidProduct</b><br>Test class: com.tutorialsninja.qa.testcases.SearchTest</td>
+<td><div><pre>java.lang.AssertionError: No product message in search results is not displayed expected [abcd] but found [There is no product that matches the search criteria.]
+	at com.tutorialsninja.qa.testcases.SearchTest.verifySearchWithInvalidProduct(SearchTest.java:52)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1241128308", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1241128308'><pre>java.lang.AssertionError: No product message in search results is not displayed expected [abcd] but found [There is no product that matches the search criteria.]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at com.tutorialsninja.qa.testcases.SearchTest.verifySearchWithInvalidProduct(SearchTest.java:52)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>8</td>
-<td>com.tutorialsninja.qa.testcases.RegisterTest@76505305</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testcases.SearchTest.setup()'><b>setup</b><br>Test class: com.tutorialsninja.qa.testcases.SearchTest</td>
-<td><div><pre>java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
-	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:148)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
-	at com.tutorialsninja.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:50)
-	at com.tutorialsninja.qa.testcases.SearchTest.setup(SearchTest.java:29)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1556061855", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1556061855'><pre>java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
-	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:148)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
-	at com.tutorialsninja.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:50)
-	at com.tutorialsninja.qa.testcases.SearchTest.setup(SearchTest.java:29)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>1</td>
-<td>com.tutorialsninja.qa.testcases.SearchTest@6a6cb05c</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testcases.LoginTest.setup()'><b>setup</b><br>Test class: com.tutorialsninja.qa.testcases.LoginTest</td>
-<td><div><pre>java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
-	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:148)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
-	at com.tutorialsninja.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:50)
-	at com.tutorialsninja.qa.testcases.LoginTest.setup(LoginTest.java:29)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace245530164", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace245530164'><pre>java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
-	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:148)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
-	at com.tutorialsninja.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:50)
-	at com.tutorialsninja.qa.testcases.LoginTest.setup(LoginTest.java:29)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>1</td>
-<td>com.tutorialsninja.qa.testcases.LoginTest@38425407</td></tr>
+<td>0</td>
+<td>com.tutorialsninja.qa.testcases.SearchTest@710636b0</td></tr>
 </table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.SearchTest.tearDown()'><b>tearDown</b><br>Test class: com.tutorialsninja.qa.testcases.SearchTest</td>
+<td title='com.tutorialsninja.qa.testcases.LoginTest.verifyLoginWithInvalidCredentials()'><b>verifyLoginWithInvalidCredentials</b><br>Test class: com.tutorialsninja.qa.testcases.LoginTest</td>
 <td></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.SearchTest@6a6cb05c</td></tr>
+<td>com.tutorialsninja.qa.testcases.LoginTest@536f2a7e</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.LoginTest.setup()'><b>setup</b><br>Test class: com.tutorialsninja.qa.testcases.LoginTest</td>
+<td title='com.tutorialsninja.qa.testcases.LoginTest.verifyLoginWithInvalidEmailAndValidPassword()'><b>verifyLoginWithInvalidEmailAndValidPassword</b><br>Test class: com.tutorialsninja.qa.testcases.LoginTest</td>
 <td></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.LoginTest@38425407</td></tr>
+<td>com.tutorialsninja.qa.testcases.LoginTest@536f2a7e</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.SearchTest.tearDown()'><b>tearDown</b><br>Test class: com.tutorialsninja.qa.testcases.SearchTest</td>
+<td title='com.tutorialsninja.qa.testcases.LoginTest.verifyLoginWithValidEmailAndInvalidPassword()'><b>verifyLoginWithValidEmailAndInvalidPassword</b><br>Test class: com.tutorialsninja.qa.testcases.LoginTest</td>
 <td></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.SearchTest@6a6cb05c</td></tr>
+<td>com.tutorialsninja.qa.testcases.LoginTest@536f2a7e</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.RegisterTest.tearDown()'><b>tearDown</b><br>Test class: com.tutorialsninja.qa.testcases.RegisterTest</td>
+<td title='com.tutorialsninja.qa.testcases.LoginTest.verifyLoginWithoutProvidingCredentials()'><b>verifyLoginWithoutProvidingCredentials</b><br>Test class: com.tutorialsninja.qa.testcases.LoginTest</td>
 <td></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.RegisterTest@76505305</td></tr>
+<td>com.tutorialsninja.qa.testcases.LoginTest@536f2a7e</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.LoginTest.setup()'><b>setup</b><br>Test class: com.tutorialsninja.qa.testcases.LoginTest</td>
+<td title='com.tutorialsninja.qa.testcases.RegisterTest.verifyRegisteringAccountByProvidingAllFields()'><b>verifyRegisteringAccountByProvidingAllFields</b><br>Test class: com.tutorialsninja.qa.testcases.RegisterTest</td>
 <td></td>
-<td>0</td>
-<td>com.tutorialsninja.qa.testcases.LoginTest@38425407</td></tr>
+<td>1</td>
+<td>com.tutorialsninja.qa.testcases.RegisterTest@6cb107fd</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.RegisterTest.tearDown()'><b>tearDown</b><br>Test class: com.tutorialsninja.qa.testcases.RegisterTest</td>
+<td title='com.tutorialsninja.qa.testcases.RegisterTest.verifyRegisteringAccountWithExistingEmailAddress()'><b>verifyRegisteringAccountWithExistingEmailAddress</b><br>Test class: com.tutorialsninja.qa.testcases.RegisterTest</td>
 <td></td>
-<td>0</td>
-<td>com.tutorialsninja.qa.testcases.RegisterTest@76505305</td></tr>
+<td>1</td>
+<td>com.tutorialsninja.qa.testcases.RegisterTest@6cb107fd</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.RegisterTest.tearDown()'><b>tearDown</b><br>Test class: com.tutorialsninja.qa.testcases.RegisterTest</td>
+<td title='com.tutorialsninja.qa.testcases.RegisterTest.verifyRegisteringAccountWithoutFillingAnyDetails()'><b>verifyRegisteringAccountWithoutFillingAnyDetails</b><br>Test class: com.tutorialsninja.qa.testcases.RegisterTest</td>
 <td></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.RegisterTest@76505305</td></tr>
+<td>com.tutorialsninja.qa.testcases.RegisterTest@6cb107fd</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.RegisterTest.tearDown()'><b>tearDown</b><br>Test class: com.tutorialsninja.qa.testcases.RegisterTest</td>
+<td title='com.tutorialsninja.qa.testcases.RegisterTest.verifyRegisteringAnAccountWithMandatoryFields()'><b>verifyRegisteringAnAccountWithMandatoryFields</b><br>Test class: com.tutorialsninja.qa.testcases.RegisterTest</td>
 <td></td>
-<td>0</td>
-<td>com.tutorialsninja.qa.testcases.RegisterTest@76505305</td></tr>
+<td>1</td>
+<td>com.tutorialsninja.qa.testcases.RegisterTest@6cb107fd</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.LoginTest.tearDown()'><b>tearDown</b><br>Test class: com.tutorialsninja.qa.testcases.LoginTest</td>
+<td title='com.tutorialsninja.qa.testcases.SearchTest.verifySearchWithValidProduct()'><b>verifySearchWithValidProduct</b><br>Test class: com.tutorialsninja.qa.testcases.SearchTest</td>
 <td></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.LoginTest@38425407</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testcases.LoginTest.tearDown()'><b>tearDown</b><br>Test class: com.tutorialsninja.qa.testcases.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>com.tutorialsninja.qa.testcases.LoginTest@38425407</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testcases.LoginTest.setup()'><b>setup</b><br>Test class: com.tutorialsninja.qa.testcases.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>com.tutorialsninja.qa.testcases.LoginTest@38425407</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testcases.LoginTest.setup()'><b>setup</b><br>Test class: com.tutorialsninja.qa.testcases.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>com.tutorialsninja.qa.testcases.LoginTest@38425407</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testcases.RegisterTest.setup()'><b>setup</b><br>Test class: com.tutorialsninja.qa.testcases.RegisterTest</td>
-<td></td>
-<td>0</td>
-<td>com.tutorialsninja.qa.testcases.RegisterTest@76505305</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testcases.RegisterTest.setup()'><b>setup</b><br>Test class: com.tutorialsninja.qa.testcases.RegisterTest</td>
-<td></td>
-<td>0</td>
-<td>com.tutorialsninja.qa.testcases.RegisterTest@76505305</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testcases.LoginTest.tearDown()'><b>tearDown</b><br>Test class: com.tutorialsninja.qa.testcases.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>com.tutorialsninja.qa.testcases.LoginTest@38425407</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testcases.LoginTest.tearDown()'><b>tearDown</b><br>Test class: com.tutorialsninja.qa.testcases.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>com.tutorialsninja.qa.testcases.LoginTest@38425407</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testcases.LoginTest.tearDown()'><b>tearDown</b><br>Test class: com.tutorialsninja.qa.testcases.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>com.tutorialsninja.qa.testcases.LoginTest@38425407</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testcases.LoginTest.setup()'><b>setup</b><br>Test class: com.tutorialsninja.qa.testcases.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>com.tutorialsninja.qa.testcases.LoginTest@38425407</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testcases.SearchTest.setup()'><b>setup</b><br>Test class: com.tutorialsninja.qa.testcases.SearchTest</td>
-<td></td>
-<td>0</td>
-<td>com.tutorialsninja.qa.testcases.SearchTest@6a6cb05c</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testcases.LoginTest.setup()'><b>setup</b><br>Test class: com.tutorialsninja.qa.testcases.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>com.tutorialsninja.qa.testcases.LoginTest@38425407</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testcases.RegisterTest.setup()'><b>setup</b><br>Test class: com.tutorialsninja.qa.testcases.RegisterTest</td>
-<td></td>
-<td>0</td>
-<td>com.tutorialsninja.qa.testcases.RegisterTest@76505305</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testcases.LoginTest.tearDown()'><b>tearDown</b><br>Test class: com.tutorialsninja.qa.testcases.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>com.tutorialsninja.qa.testcases.LoginTest@38425407</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testcases.LoginTest.tearDown()'><b>tearDown</b><br>Test class: com.tutorialsninja.qa.testcases.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>com.tutorialsninja.qa.testcases.LoginTest@38425407</td></tr>
+<td>com.tutorialsninja.qa.testcases.SearchTest@710636b0</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.LoginTest.verifyLoginWithInvalidEmailAndValidPassword()'><b>verifyLoginWithInvalidEmailAndValidPassword</b><br>Test class: com.tutorialsninja.qa.testcases.LoginTest</td>
-<td><div><pre>java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
-	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:148)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
-	at com.tutorialsninja.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:50)
-	at com.tutorialsninja.qa.testcases.LoginTest.setup(LoginTest.java:29)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1290614253", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1290614253'><pre>java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
-	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:148)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
-	at com.tutorialsninja.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:50)
-	at com.tutorialsninja.qa.testcases.LoginTest.setup(LoginTest.java:29)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.tutorialsninja.qa.testcases.LoginTest@38425407</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testcases.RegisterTest.verifyRegisteringAccountWithExistingEmailAddress()'><b>verifyRegisteringAccountWithExistingEmailAddress</b><br>Test class: com.tutorialsninja.qa.testcases.RegisterTest</td>
-<td><div><pre>java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
-	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:148)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
-	at com.tutorialsninja.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:50)
-	at com.tutorialsninja.qa.testcases.RegisterTest.setup(RegisterTest.java:29)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace43650267", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace43650267'><pre>java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
-	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:148)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
-	at com.tutorialsninja.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:50)
-	at com.tutorialsninja.qa.testcases.RegisterTest.setup(RegisterTest.java:29)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.tutorialsninja.qa.testcases.RegisterTest@76505305</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testcases.LoginTest.verifyLoginWithValidCredentials()'><b>verifyLoginWithValidCredentials</b><br>Test class: com.tutorialsninja.qa.testcases.LoginTest<br>Parameters: amotooricap3@gmail.com, 12345</td>
-<td><div><pre>java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
-	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:148)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
-	at com.tutorialsninja.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:50)
-	at com.tutorialsninja.qa.testcases.LoginTest.setup(LoginTest.java:29)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1296928719", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1296928719'><pre>java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
-	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:148)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
-	at com.tutorialsninja.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:50)
-	at com.tutorialsninja.qa.testcases.LoginTest.setup(LoginTest.java:29)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.tutorialsninja.qa.testcases.LoginTest@38425407</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testcases.SearchTest.verifySearchWithValidProduct()'><b>verifySearchWithValidProduct</b><br>Test class: com.tutorialsninja.qa.testcases.SearchTest</td>
-<td><div><pre>java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
-	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:148)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
-	at com.tutorialsninja.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:50)
-	at com.tutorialsninja.qa.testcases.SearchTest.setup(SearchTest.java:29)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1513029997", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1513029997'><pre>java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
-	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:148)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
-	at com.tutorialsninja.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:50)
-	at com.tutorialsninja.qa.testcases.SearchTest.setup(SearchTest.java:29)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.tutorialsninja.qa.testcases.SearchTest@6a6cb05c</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testcases.LoginTest.verifyLoginWithInvalidCredentials()'><b>verifyLoginWithInvalidCredentials</b><br>Test class: com.tutorialsninja.qa.testcases.LoginTest</td>
-<td><div><pre>java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
-	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:148)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
-	at com.tutorialsninja.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:50)
-	at com.tutorialsninja.qa.testcases.LoginTest.setup(LoginTest.java:29)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1068232840", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1068232840'><pre>java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
-	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:148)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
-	at com.tutorialsninja.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:50)
-	at com.tutorialsninja.qa.testcases.LoginTest.setup(LoginTest.java:29)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.tutorialsninja.qa.testcases.LoginTest@38425407</td></tr>
-<tr>
 <td title='com.tutorialsninja.qa.testcases.SearchTest.verifySearchWithoutAnyProduct()'><b>verifySearchWithoutAnyProduct</b><br>Test class: com.tutorialsninja.qa.testcases.SearchTest</td>
-<td><div><pre>java.lang.Throwable: Method com.tutorialsninja.qa.testcases.SearchTest.verifySearchWithoutAnyProduct() on instance com.tutorialsninja.qa.testcases.SearchTest@6a6cb05c depends on not successfully finished methods 
-[com.tutorialsninja.qa.testcases.SearchTest.verifySearchWithValidProduct() on instance com.tutorialsninja.qa.testcases.SearchTest@6a6cb05c
-com.tutorialsninja.qa.testcases.SearchTest.verifySearchWithInvalidProduct() on instance com.tutorialsninja.qa.testcases.SearchTest@6a6cb05c]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace467313213", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace467313213'><pre>java.lang.Throwable: Method com.tutorialsninja.qa.testcases.SearchTest.verifySearchWithoutAnyProduct() on instance com.tutorialsninja.qa.testcases.SearchTest@6a6cb05c depends on not successfully finished methods 
-[com.tutorialsninja.qa.testcases.SearchTest.verifySearchWithValidProduct() on instance com.tutorialsninja.qa.testcases.SearchTest@6a6cb05c
-com.tutorialsninja.qa.testcases.SearchTest.verifySearchWithInvalidProduct() on instance com.tutorialsninja.qa.testcases.SearchTest@6a6cb05c]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
+<td></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.SearchTest@6a6cb05c</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testcases.LoginTest.verifyLoginWithValidCredentials()'><b>verifyLoginWithValidCredentials</b><br>Test class: com.tutorialsninja.qa.testcases.LoginTest<br>Parameters: amotooricap1@gmail.com, 12345</td>
-<td><div><pre>java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
-	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:148)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
-	at com.tutorialsninja.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:50)
-	at com.tutorialsninja.qa.testcases.LoginTest.setup(LoginTest.java:29)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1009916891", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1009916891'><pre>java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
-	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:148)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
-	at com.tutorialsninja.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:50)
-	at com.tutorialsninja.qa.testcases.LoginTest.setup(LoginTest.java:29)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.tutorialsninja.qa.testcases.LoginTest@38425407</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testcases.LoginTest.verifyLoginWithoutProvidingCredentials()'><b>verifyLoginWithoutProvidingCredentials</b><br>Test class: com.tutorialsninja.qa.testcases.LoginTest</td>
-<td><div><pre>java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
-	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:148)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
-	at com.tutorialsninja.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:50)
-	at com.tutorialsninja.qa.testcases.LoginTest.setup(LoginTest.java:29)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace668760567", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace668760567'><pre>java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
-	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:148)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
-	at com.tutorialsninja.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:50)
-	at com.tutorialsninja.qa.testcases.LoginTest.setup(LoginTest.java:29)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.tutorialsninja.qa.testcases.LoginTest@38425407</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testcases.SearchTest.verifySearchWithInvalidProduct()'><b>verifySearchWithInvalidProduct</b><br>Test class: com.tutorialsninja.qa.testcases.SearchTest</td>
-<td><div><pre>java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
-	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:148)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
-	at com.tutorialsninja.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:50)
-	at com.tutorialsninja.qa.testcases.SearchTest.setup(SearchTest.java:29)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1616438581", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1616438581'><pre>java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
-	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:148)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
-	at com.tutorialsninja.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:50)
-	at com.tutorialsninja.qa.testcases.SearchTest.setup(SearchTest.java:29)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.tutorialsninja.qa.testcases.SearchTest@6a6cb05c</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testcases.LoginTest.verifyLoginWithValidCredentials()'><b>verifyLoginWithValidCredentials</b><br>Test class: com.tutorialsninja.qa.testcases.LoginTest<br>Parameters: amotooricap9@gmail.com, 12345</td>
-<td><div><pre>java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
-	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:148)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
-	at com.tutorialsninja.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:50)
-	at com.tutorialsninja.qa.testcases.LoginTest.setup(LoginTest.java:29)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace242408359", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace242408359'><pre>java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
-	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:148)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
-	at com.tutorialsninja.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:50)
-	at com.tutorialsninja.qa.testcases.LoginTest.setup(LoginTest.java:29)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.tutorialsninja.qa.testcases.LoginTest@38425407</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testcases.RegisterTest.verifyRegisteringAccountByProvidingAllFields()'><b>verifyRegisteringAccountByProvidingAllFields</b><br>Test class: com.tutorialsninja.qa.testcases.RegisterTest</td>
-<td><div><pre>java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
-	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:148)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
-	at com.tutorialsninja.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:50)
-	at com.tutorialsninja.qa.testcases.RegisterTest.setup(RegisterTest.java:29)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace462773420", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace462773420'><pre>java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
-	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:148)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
-	at com.tutorialsninja.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:50)
-	at com.tutorialsninja.qa.testcases.RegisterTest.setup(RegisterTest.java:29)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.tutorialsninja.qa.testcases.RegisterTest@76505305</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testcases.RegisterTest.verifyRegisteringAnAccountWithMandatoryFields()'><b>verifyRegisteringAnAccountWithMandatoryFields</b><br>Test class: com.tutorialsninja.qa.testcases.RegisterTest</td>
-<td><div><pre>java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
-	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:148)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
-	at com.tutorialsninja.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:50)
-	at com.tutorialsninja.qa.testcases.RegisterTest.setup(RegisterTest.java:29)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1477637771", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1477637771'><pre>java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
-	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:148)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
-	at com.tutorialsninja.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:50)
-	at com.tutorialsninja.qa.testcases.RegisterTest.setup(RegisterTest.java:29)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.tutorialsninja.qa.testcases.RegisterTest@76505305</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testcases.RegisterTest.verifyRegisteringAccountWithoutFillingAnyDetails()'><b>verifyRegisteringAccountWithoutFillingAnyDetails</b><br>Test class: com.tutorialsninja.qa.testcases.RegisterTest</td>
-<td><div><pre>java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
-	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:148)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
-	at com.tutorialsninja.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:50)
-	at com.tutorialsninja.qa.testcases.RegisterTest.setup(RegisterTest.java:29)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1857173583", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1857173583'><pre>java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
-	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:148)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
-	at com.tutorialsninja.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:50)
-	at com.tutorialsninja.qa.testcases.RegisterTest.setup(RegisterTest.java:29)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.tutorialsninja.qa.testcases.RegisterTest@76505305</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testcases.LoginTest.verifyLoginWithValidEmailAndInvalidPassword()'><b>verifyLoginWithValidEmailAndInvalidPassword</b><br>Test class: com.tutorialsninja.qa.testcases.LoginTest</td>
-<td><div><pre>java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
-	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:148)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
-	at com.tutorialsninja.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:50)
-	at com.tutorialsninja.qa.testcases.LoginTest.setup(LoginTest.java:29)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1960253514", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1960253514'><pre>java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
-	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:148)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:39)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:233)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:450)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:128)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
-	at com.tutorialsninja.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:50)
-	at com.tutorialsninja.qa.testcases.LoginTest.setup(LoginTest.java:29)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at org.testng.TestRunner.run(TestRunner.java:601)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.tutorialsninja.qa.testcases.LoginTest@38425407</td></tr>
+<td>null</td></tr>
 </table><p>
 </body>
 </html>
