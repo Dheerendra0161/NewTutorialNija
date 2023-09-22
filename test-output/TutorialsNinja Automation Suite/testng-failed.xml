@@ -8,10 +8,19 @@
     <classes>
       <class name="com.tutorialsninja.qa.testcases.LoginTest">
         <methods>
+          <include name="verifyLoginWithInvalidEmailAndValidPassword"/>
+          <include name="verifyLoginWithValidEmailAndInvalidPassword"/>
           <include name="tearDown"/>
           <include name="setup"/>
+          <include name="verifyLoginWithoutProvidingCredentials"/>
         </methods>
       </class> <!-- com.tutorialsninja.qa.testcases.LoginTest -->
+      <class name="com.tutorialsninja.qa.testcases.RegisterTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.tutorialsninja.qa.testcases.RegisterTest -->
       <class name="com.tutorialsninja.qa.testcases.SearchTest">
         <methods>
           <include name="verifySearchWithoutAnyProduct"/>
@@ -21,12 +30,6 @@
           <include name="verifySearchWithValidProduct"/>
         </methods>
       </class> <!-- com.tutorialsninja.qa.testcases.SearchTest -->
-      <class name="com.tutorialsninja.qa.testcases.RegisterTest">
-        <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.tutorialsninja.qa.testcases.RegisterTest -->
     </classes>
   </test> <!-- TutorialsNinja Tests(failed) -->
 </suite> <!-- Failed suite [TutorialsNinja Automation Suite] -->

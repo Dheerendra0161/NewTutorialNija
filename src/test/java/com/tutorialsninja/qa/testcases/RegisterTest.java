@@ -16,12 +16,13 @@ public class RegisterTest extends Base {
 	
 	RegisterPage registerPage;
 	AccountSuccessPage accountSuccessPage;
+	public WebDriver driver;
 	
 	public RegisterTest() {
 		super();
 	}
 	
-	public WebDriver driver;
+
 	
 	@BeforeMethod
 	public void setup() {

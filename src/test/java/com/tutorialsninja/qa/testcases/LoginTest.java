@@ -16,18 +16,20 @@ import com.tutorialsninja.qa.utils.Utilities;
 public class LoginTest extends Base{
 	
 	LoginPage loginPage;
+	HomePage homePage;
+	public WebDriver driver;
 	
 	public LoginTest() {
 		super();
 	}
 	
-	public WebDriver driver;
+	
 	
 	@BeforeMethod
 	public void setup() {
 		
 		driver = initializeBrowserAndOpenApplicationURL(prop.getProperty("browserName"));
-		HomePage homePage = new HomePage(driver);
+		homePage = new HomePage(driver);
 		loginPage = homePage.naviageToLoginPage();
 		
 	}

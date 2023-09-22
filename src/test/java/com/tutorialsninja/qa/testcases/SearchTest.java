@@ -16,12 +16,14 @@ public class SearchTest extends Base {
 	
 	SearchPage searchPage;
 	HomePage homePage;
+	public WebDriver driver;
+	
 	
 	public SearchTest() {
 		super();
 	}
 	
-	public WebDriver driver;
+	
 	
 	@BeforeMethod
 	public void setup() {
@@ -29,6 +31,7 @@ public class SearchTest extends Base {
 		driver = initializeBrowserAndOpenApplicationURL(prop.getProperty("browserName"));
 		homePage = new HomePage(driver);
 	}
+	
 	
 	@AfterMethod
 	public void tearDown() {
@@ -53,7 +56,7 @@ public class SearchTest extends Base {
 		
 	}
 	
-	@Test(priority=3,dependsOnMethods={"verifySearchWithValidProduct","verifySearchWithInvalidProduct"})
+	@Test(priority=3 ,dependsOnMethods={"verifySearchWithValidProduct","verifySearchWithInvalidProduct"})
 	public void verifySearchWithoutAnyProduct() {
 		
 		searchPage = homePage.clickOnSearchButton();
