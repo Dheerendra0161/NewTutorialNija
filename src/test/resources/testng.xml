@@ -8,9 +8,10 @@
     <classes>
       <class name="com.tutorialsninja.qa.testcases.RegisterTest"/>
       <class name="com.tutorialsninja.qa.testcases.LoginTest">
-		  <methods>
+		  <!-- <methods>
 			  <exclude name="verifyLoginWithValidCredentials"></exclude>
 		  </methods>
+		  -->
       </class>
      
       <class name="com.tutorialsninja.qa.testcases.SearchTest"/>

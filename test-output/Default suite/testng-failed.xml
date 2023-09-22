@@ -5,8 +5,8 @@
     <classes>
       <class name="com.tutorialsninja.qa.testcases.LoginTest">
         <methods>
-          <include name="verifyLoginWithInvalidCredentials"/>
           <include name="setup"/>
+          <include name="verifyLoginWithoutProvidingCredentials"/>
         </methods>
       </class> <!-- com.tutorialsninja.qa.testcases.LoginTest -->
     </classes>
