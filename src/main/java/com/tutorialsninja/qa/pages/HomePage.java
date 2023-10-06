@@ -25,6 +25,8 @@ public class HomePage {
 	@FindBy(xpath = "//div[@id='search']/descendant::button")
 	private WebElement searchButton;
 	
+	@FindBy(xpath = "//div[@id='search']/descendant::button")
+	private WebElement searchButton1;
 
 	public HomePage(WebDriver driver) {
 
