@@ -59,7 +59,7 @@ public class RegisterTest extends Base {
 
 	}
 
-	@Test(priority = 3,groups = {"sanity"})
+	@Test(priority = 3,groups = {"Sanity"})
 	public void verifyRegisteringAccountWithExistingEmailAddress() {
 
 		registerPage.registerWithAllFields(dataProp.getProperty("firstName"), dataProp.getProperty("lastName"),
@@ -72,7 +72,7 @@ public class RegisterTest extends Base {
 
 	}
 	  
-	@Test(priority = 4,groups = { "smoke" })
+	@Test(priority = 4,groups = { "Smoke" })
 	public void verifyRegisteringAccountWithoutFillingAnyDetails() {
 
 		registerPage.clickOnContinueButton();
