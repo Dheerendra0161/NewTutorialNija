@@ -24,7 +24,7 @@ public class LoginPage {
 	@FindBy(xpath = "//div[contains(@class,'alert-dismissible')]")
 	private WebElement emailPasswordMatchingWarning;
 	
-	@FindBy(xpath = "//div[]")
+	@FindBy(xpath = "//div[*/div]")
 	private WebElement emailPassword;
 
 	public LoginPage(WebDriver driver) {
