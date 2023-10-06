@@ -20,7 +20,10 @@ public class LoginPage {
 
 	@FindBy(xpath = "//div[contains(@class,'alert-dismissible')]")
 	private WebElement emailPasswordNotMatchingWarning;
-
+	
+	@FindBy(xpath = "")
+	private WebElement emailPasswor;
+	
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this); // can use object :new LoginPage(driver) or LoginPage.this: instead of :this:
