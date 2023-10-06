@@ -28,7 +28,7 @@ public class LoginPage {
 	private WebElement emailAndPassword;
 	
 	@FindBy(xpath = "//div")
-	private WebElement email;
+	private WebElement emaildddddddddddddddd;
 
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
