@@ -4,32 +4,27 @@
   <listeners>
     <listener class-name="com.tutorialsninja.qa.listeners.MyListeners"/>
   </listeners>
-  <test parallel="none" name="TutorialsNinja Tests(failed)">
+  <test parallel="classes" name="TutorialsNinja Parallel Tests(failed)">
     <classes>
-      <class name="com.tutorialsninja.qa.testcases.LoginTest">
+      <class name="com.tutorialsninja.qa.testcases.SearchTest">
         <methods>
-          <include name="verifyLoginWithInvalidEmailAndValidPassword"/>
-          <include name="verifyLoginWithValidEmailAndInvalidPassword"/>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="verifyLoginWithoutProvidingCredentials"/>
         </methods>
-      </class> <!-- com.tutorialsninja.qa.testcases.LoginTest -->
+      </class> <!-- com.tutorialsninja.qa.testcases.SearchTest -->
       <class name="com.tutorialsninja.qa.testcases.RegisterTest">
         <methods>
           <include name="setup"/>
+          <include name="verifyRegisteringAccountByProvidingAllFields"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.tutorialsninja.qa.testcases.RegisterTest -->
-      <class name="com.tutorialsninja.qa.testcases.SearchTest">
+      <class name="com.tutorialsninja.qa.testcases.LoginTest">
         <methods>
-          <include name="verifySearchWithoutAnyProduct"/>
           <include name="tearDown"/>
-          <include name="verifySearchWithInvalidProduct"/>
           <include name="setup"/>
-          <include name="verifySearchWithValidProduct"/>
         </methods>
-      </class> <!-- com.tutorialsninja.qa.testcases.SearchTest -->
+      </class> <!-- com.tutorialsninja.qa.testcases.LoginTest -->
     </classes>
-  </test> <!-- TutorialsNinja Tests(failed) -->
+  </test> <!-- TutorialsNinja Parallel Tests(failed) -->
 </suite> <!-- Failed suite [TutorialsNinja Automation Suite] -->
