@@ -25,7 +25,7 @@ public class LoginPage {
 	private WebElement emailPasswordMatchingWarning;
 	
 	@FindBy(xpath = "//div[]")
-	private WebElement emailPassword1;
+	private WebElement emailPassword;
 
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
