@@ -72,7 +72,7 @@ public class RegisterTest extends Base {
 
 	}
 	  
-	@Test(priority = 4,groups = { "Smoke" })
+	@Test(priority = 4,groups = { "smoke" })
 	public void verifyRegisteringAccountWithoutFillingAnyDetails() {
 
 		registerPage.clickOnContinueButton();
