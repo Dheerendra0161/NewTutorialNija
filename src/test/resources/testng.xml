@@ -5,7 +5,8 @@
 	<listeners>
 		<listener class-name="com.tutorialsninja.qa.listeners.MyListeners" />
 	</listeners>
- 
+
+	<!-- 
 	<test name="Register">
 		<groups>
 			<run>
@@ -14,15 +15,20 @@
 			</run>
 		</groups>
 	</test>
+	-->
 
-	<test name="TutorialsNinja Parallel Tests"  parallel = "classes" thread-count = "4">
-		
+	<test name="TutorialsNinja Parallel Tests" parallel="classes"
+		thread-count="2">
+		 	
+		<!-- 
 		<groups>
 			<dependencies>
-				<group name="verifyLoginWithInvalidEmailAndValidPassword" depends-on="verifyRegisteringAccountByProvidingAllFields"></group>
+				<group name="verifyLoginWithInvalidEmailAndValidPassword"
+		depends-on="verifyRegisteringAccountByProvidingAllFields"></group>
 			</dependencies>
 		</groups>
-		
+		-->
+
 		<classes>
 			<class name="com.tutorialsninja.qa.testcases.RegisterTest" />
 			<class name="com.tutorialsninja.qa.testcases.LoginTest">
@@ -30,10 +36,7 @@
 					<exclude name="verifyLoginWithValidCredentials"></exclude>
 				</methods>
 			</class>
-
 			<class name="com.tutorialsninja.qa.testcases.SearchTest" />
 		</classes>
-	</test> <!--
-	Test -->
-</suite> <!--
-Suite -->
+	</test>
+</suite> 

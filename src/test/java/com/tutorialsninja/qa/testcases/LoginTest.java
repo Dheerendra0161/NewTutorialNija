@@ -62,7 +62,7 @@ public class LoginTest extends Base{
 		
 	}
 	
-	@Test(priority=3,dependsOnMethods = { "verifyRegisteringAccountByProvidingAllFields" })
+	@Test(priority=3)
 	public void verifyLoginWithInvalidEmailAndValidPassword() {
 	
 		loginPage.login(Utilities.generateEmailWithTimeStamp(),prop.getProperty("validPassword"));
