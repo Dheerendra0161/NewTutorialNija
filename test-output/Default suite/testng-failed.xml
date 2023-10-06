@@ -3,12 +3,16 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="com.tutorialsninja.qa.testcases.SearchTest">
+      <class name="com.tutorialsninja.qa.testcases.LoginTest">
         <methods>
-          <include name="verifySearchWithValidProductAfterLogin"/>
+          <include name="verifyLoginWithInvalidEmailAndValidPassword"/>
+          <include name="verifyLoginWithValidEmailAndInvalidPassword"/>
+          <include name="tearDown"/>
+          <include name="verifyLoginWithInvalidCredentials"/>
           <include name="setup"/>
+          <include name="verifyLoginWithoutProvidingCredentials"/>
         </methods>
-      </class> <!-- com.tutorialsninja.qa.testcases.SearchTest -->
+      </class> <!-- com.tutorialsninja.qa.testcases.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
