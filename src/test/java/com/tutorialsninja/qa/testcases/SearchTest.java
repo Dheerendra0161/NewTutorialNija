@@ -5,17 +5,14 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import com.tutorialsninja.qa.base.Base;
-import com.tutorialsninja.qa.pages.HomePage;
-import com.tutorialsninja.qa.pages.SearchPage;
 
 //Updated Comment - Added more details
 
 public class SearchTest extends Base {
 	
-	SearchPage searchPage;
-	HomePage homePage;
+
+
 	public WebDriver driver;
 	
 	
@@ -27,9 +24,7 @@ public class SearchTest extends Base {
 	
 	@BeforeMethod
 	public void setup() {
-		
 		driver = initializeBrowserAndOpenApplicationURL(prop.getProperty("browserName"));
-		homePage = new HomePage(driver);
 	}
 	
 	
@@ -64,4 +59,17 @@ public class SearchTest extends Base {
 		
 	}
 	
+	@Test()
+	public void verifySearchWithValidProductAfterLogin() {
+		loginPage=homePage.naviageToLoginPage();
+		accountPage=loginPage.login("dheeruvish1608@gmail.com","123456");
+		searchPage=homePage.searchForAProduct(dataProp.getProperty("validProduct"));
+		Assert.assertTrue(searchPage.displayStatusOfHPValidProduct(),"Valid product HP is not displayed in the search results");
+		searchDetailsPage= searchPage.navigateFirstProduct();
+		searchDetailsPage.validateProductDetails();
+		searchDetailsPage.addToCart();
+		
+		
+		
+	}
 }

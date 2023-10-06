@@ -65,85 +65,9 @@ public class RegisterPage {
 		
 	}
 	
-	public String retrievePasswordWarning() {
-		
-		String passwordWarningText = passwordWarning.getText();
-		return passwordWarningText;
-	}
 	
 	
-	public String retrieveTelephoneWarning() {
-		
-		String telephoneWarningText = telephoneWarning.getText();
-		return telephoneWarningText;
-	}
-	
-	public String retrieveEmailWarning() {
-		
-		String emailWarningText = emailWarning.getText();
-		return emailWarningText;
-	}
-	
-	public String retrieveLastNameWarning() {
-		
-		String lastNameWarningText = lastNameWarning.getText();
-		return lastNameWarningText;
-	}
-	
-	public String retrieveFirstNameWarning() {
-		
-		String firstNameWarningText = firstNameWarning.getText();
-		return firstNameWarningText;
-	}
-	
-	public String retrievePrivacyPolicyWarning() {
-		
-		String privacyPolicyWarningText = privacyPolicyWarning.getText();
-		return privacyPolicyWarningText;
-		
-	}
-	
-	public void enterFirstName(String firstNameText) {
-		
-		firstNameField.sendKeys(firstNameText);
-		
-	}
-	
-	public void enterLastName(String lastNameText) {
-		
-		lastNameField.sendKeys(lastNameText);
-		
-	}
-	
-	public void enterEmailAddress(String emailText) {
-		
-		emailAddressField.sendKeys(emailText);
-		
-	}
-	
-	public void enterTelephoneNumber(String telephoneText) {
-		
-		telephoneField.sendKeys(telephoneText);
-		
-	}
-	
-	public void enterPassword(String passwordText) {
-		
-		passwordField.sendKeys(passwordText);
-		
-	}
-	
-	public void enterConfirmPassword(String passwordText) {
-		
-		passwordConfirmField.sendKeys(passwordText);
-		
-	}
-	
-	public void selectPrivacyPolicy() {
-		
-		privacyPolicyField.click();
-		
-	}
+
 	
 	public AccountSuccessPage clickOnContinueButton() {
 		

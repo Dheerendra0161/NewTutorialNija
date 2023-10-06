@@ -5,11 +5,8 @@
     <classes>
       <class name="com.tutorialsninja.qa.testcases.SearchTest">
         <methods>
-          <include name="verifySearchWithoutAnyProduct"/>
-          <include name="tearDown"/>
-          <include name="verifySearchWithInvalidProduct"/>
+          <include name="verifySearchWithValidProductAfterLogin"/>
           <include name="setup"/>
-          <include name="verifySearchWithValidProduct"/>
         </methods>
       </class> <!-- com.tutorialsninja.qa.testcases.SearchTest -->
     </classes>

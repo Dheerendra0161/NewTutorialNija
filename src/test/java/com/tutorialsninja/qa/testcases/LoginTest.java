@@ -9,14 +9,12 @@ import org.testng.annotations.Test;
 
 import com.tutorialsninja.qa.base.Base;
 import com.tutorialsninja.qa.pages.AccountPage;
-import com.tutorialsninja.qa.pages.HomePage;
-import com.tutorialsninja.qa.pages.LoginPage;
 import com.tutorialsninja.qa.utils.Utilities;
 
 public class LoginTest extends Base{
 	
-	LoginPage loginPage;
-	HomePage homePage;
+//	LoginPage loginPage;
+//	HomePage homePage;
 	public WebDriver driver;
 	
 	public LoginTest() {
@@ -29,7 +27,7 @@ public class LoginTest extends Base{
 	public void setup() {
 		
 		driver = initializeBrowserAndOpenApplicationURL(prop.getProperty("browserName"));
-		homePage = new HomePage(driver);
+		//homePage = new HomePage(driver);
 		loginPage = homePage.naviageToLoginPage();
 		
 	}
@@ -64,7 +62,7 @@ public class LoginTest extends Base{
 		
 	}
 	
-	@Test(priority=3)
+	@Test(priority=3,dependsOnMethods = { "verifyRegisteringAccountByProvidingAllFields" })
 	public void verifyLoginWithInvalidEmailAndValidPassword() {
 	
 		loginPage.login(Utilities.generateEmailWithTimeStamp(),prop.getProperty("validPassword"));
@@ -82,10 +80,10 @@ public class LoginTest extends Base{
 	
 	@Test(priority=5)
 	public void verifyLoginWithoutProvidingCredentials() {
-		
 		loginPage.clickOnLoginButton();
 		Assert.assertTrue(loginPage.retrieveEmailPasswordNotMatchingWarningMessageText().contains(dataProp.getProperty("emailPasswordNoMatchWarning")),"Expected Warning message is not displayed");
 	
 	}
+	
 	
 }

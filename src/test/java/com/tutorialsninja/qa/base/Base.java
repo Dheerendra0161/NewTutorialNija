@@ -1,6 +1,5 @@
 package com.tutorialsninja.qa.base;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.time.Duration;
 import java.util.Properties;
@@ -10,72 +9,77 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
-
+import com.tutorialsninja.qa.pages.AccountPage;
+import com.tutorialsninja.qa.pages.HomePage;
+import com.tutorialsninja.qa.pages.LoginPage;
+import com.tutorialsninja.qa.pages.SearchDetailsPage;
+import com.tutorialsninja.qa.pages.SearchPage;
 import com.tutorialsninja.qa.utils.Utilities;
 
 public class Base {
-	
+
 	WebDriver driver;
 	public Properties prop;
 	public Properties dataProp;
-		
+	public LoginPage loginPage;
+	public HomePage homePage;
+	public SearchPage searchPage;
+	public AccountPage accountPage;
+	public SearchDetailsPage searchDetailsPage;
+
 	public Base() {
-		
+
 		prop = new Properties();
-		//File propFile = new File(\\src\\main\\java\\com\\tutorialsninja\\qa\\config\\config.properties");
+		// File propFile = new
+		// File(\\src\\main\\java\\com\\tutorialsninja\\qa\\config\\config.properties");
 		try {
-			FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\com\\tutorialsninja\\qa\\config\\config.properties");
+			FileInputStream fis = new FileInputStream(System.getProperty("user.dir")
+					+ "\\src\\main\\java\\com\\tutorialsninja\\qa\\config\\config.properties");
 			prop.load(fis);
-		}catch(Throwable e) {
+		} catch (Throwable e) {
 			e.printStackTrace();
 		}
-		
-		
+
 		dataProp = new Properties();
-		//File dataPropFile = new File(System.getProperty("user.dir")+"\\src\\main\\java\\com\\tutorialsninja\\qa\\testdata\\testdata.properties");
-		
+		// File dataPropFile = new
+		// File(System.getProperty("user.dir")+"\\src\\main\\java\\com\\tutorialsninja\\qa\\testdata\\testdata.properties");
+
 		try {
-			FileInputStream dataFis = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\com\\tutorialsninja\\qa\\testdata\\testdata.properties");
+			FileInputStream dataFis = new FileInputStream(System.getProperty("user.dir")
+					+ "\\src\\main\\java\\com\\tutorialsninja\\qa\\testdata\\testdata.properties");
 			dataProp.load(dataFis);
-		}catch(Throwable e) {
+		} catch (Throwable e) {
 			e.printStackTrace();
 		}
-		
-		
-		
 	}
-	
+
 	public WebDriver initializeBrowserAndOpenApplicationURL(String browserName) {
-			
-		if(browserName.equalsIgnoreCase("chrome")) {
-			
+
+		if (browserName.equalsIgnoreCase("chrome")) {
+
 			driver = new ChromeDriver();
-			
-		}else if(browserName.equalsIgnoreCase("firefox")) {
-			
+
+		} else if (browserName.equalsIgnoreCase("firefox")) {
+
 			driver = new FirefoxDriver();
-			
-		}else if(browserName.equalsIgnoreCase("edge")) {
-			
+
+		} else if (browserName.equalsIgnoreCase("edge")) {
+
 			driver = new EdgeDriver();
-			
-		}else if(browserName.equalsIgnoreCase("safari")) {
-			
+
+		} else if (browserName.equalsIgnoreCase("safari")) {
+
 			driver = new SafariDriver();
-			
+
 		}
-	
+
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Utilities.IMPLICIT_WAIT_TIME));
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(Utilities.PAGE_LOAD_TIME));
 		driver.get(prop.getProperty("url"));
-		
+		homePage =new HomePage(driver);
 		return driver;
-		
+
 	}
-	
-	
-	
-	
-	
+
 }

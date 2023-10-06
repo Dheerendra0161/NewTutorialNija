@@ -1,17 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="none" name="Failed suite [Default suite]">
-  <test parallel="none" name="Default test(failed)">
+<suite parallel="none" name="Failed suite [TutorialsNinja Automation Suite]">
+  <listeners>
+    <listener class-name="com.tutorialsninja.qa.listeners.MyListeners"/>
+  </listeners>
+  <test parallel="classes" name="TutorialsNinja Parallel Tests(failed)">
     <classes>
       <class name="com.tutorialsninja.qa.testcases.SearchTest">
         <methods>
-          <include name="verifySearchWithoutAnyProduct"/>
           <include name="tearDown"/>
-          <include name="verifySearchWithInvalidProduct"/>
           <include name="setup"/>
-          <include name="verifySearchWithValidProduct"/>
         </methods>
       </class> <!-- com.tutorialsninja.qa.testcases.SearchTest -->
+      <class name="com.tutorialsninja.qa.testcases.RegisterTest">
+        <methods>
+          <include name="setup"/>
+          <include name="verifyRegisteringAccountByProvidingAllFields"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.tutorialsninja.qa.testcases.RegisterTest -->
+      <class name="com.tutorialsninja.qa.testcases.LoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.tutorialsninja.qa.testcases.LoginTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- TutorialsNinja Parallel Tests(failed) -->
+</suite> <!-- Failed suite [TutorialsNinja Automation Suite] -->

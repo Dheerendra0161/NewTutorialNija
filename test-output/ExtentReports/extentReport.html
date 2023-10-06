@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">TutorialsNinja Test Automation Results Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">22/09/2023 05:23:17</span></a>
+<a href="#"><span class="badge badge-primary">05/10/2023 07:51:49</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,11 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
@@ -67,7 +72,7 @@
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
-<a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -80,9 +85,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">verifyRegisteringAnAccountWithMandatoryFields</p>
+            <p class="name">verifySearchWithValidProductAfterLogin</p>
             <p class="text-sm">
-              <span>5:23:35 PM</span> / <span>00:00:03:312</span>
+              <span>7:52:16 PM</span> / <span>00:00:00:008</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -90,10 +95,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyRegisteringAnAccountWithMandatoryFields</h5>
-<span class='badge badge-success'>09.22.2023 5:23:35 PM</span>
-<span class='badge badge-danger'>09.22.2023 5:23:38 PM</span>
-<span class='badge badge-default'>00:00:03:312</span>
+<h5 class="test-status text-pass">verifySearchWithValidProductAfterLogin</h5>
+<span class='badge badge-success'>10.05.2023 7:52:16 PM</span>
+<span class='badge badge-danger'>10.05.2023 7:52:16 PM</span>
+<span class='badge badge-default'>00:00:00:008</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -105,16 +110,9 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:23:35 PM</td>
+        <td>7:52:16 PM</td>
         <td>
-          verifyRegisteringAnAccountWithMandatoryFields started executing
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:23:38 PM</td>
-        <td>
-          verifyRegisteringAnAccountWithMandatoryFields got successfully executed
+          verifySearchWithValidProductAfterLogin started executing
         </td>
       </tr>
   </tbody>
@@ -127,9 +125,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">verifyLoginWithValidCredentials</p>
+            <p class="name">verifyLoginWithInvalidCredentials</p>
             <p class="text-sm">
-              <span>5:23:53 PM</span> / <span>00:00:00:855</span>
+              <span>7:52:18 PM</span> / <span>00:00:00:000</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -137,10 +135,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyLoginWithValidCredentials</h5>
-<span class='badge badge-success'>09.22.2023 5:23:53 PM</span>
-<span class='badge badge-danger'>09.22.2023 5:23:54 PM</span>
-<span class='badge badge-default'>00:00:00:855</span>
+<h5 class="test-status text-pass">verifyLoginWithInvalidCredentials</h5>
+<span class='badge badge-success'>10.05.2023 7:52:18 PM</span>
+<span class='badge badge-danger'>10.05.2023 7:52:18 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -152,16 +150,9 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:23:53 PM</td>
+        <td>7:52:18 PM</td>
         <td>
-          verifyLoginWithValidCredentials started executing
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:23:54 PM</td>
-        <td>
-          verifyLoginWithValidCredentials got successfully executed
+          verifyLoginWithInvalidCredentials started executing
         </td>
       </tr>
   </tbody>
@@ -174,9 +165,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">verifySearchWithValidProduct</p>
+            <p class="name">verifyRegisteringAnAccountWithMandatoryFields</p>
             <p class="text-sm">
-              <span>5:24:05 PM</span> / <span>00:00:00:665</span>
+              <span>7:52:19 PM</span> / <span>00:00:04:951</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -184,10 +175,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifySearchWithValidProduct</h5>
-<span class='badge badge-success'>09.22.2023 5:24:05 PM</span>
-<span class='badge badge-danger'>09.22.2023 5:24:06 PM</span>
-<span class='badge badge-default'>00:00:00:665</span>
+<h5 class="test-status text-pass">verifyRegisteringAnAccountWithMandatoryFields</h5>
+<span class='badge badge-success'>10.05.2023 7:52:19 PM</span>
+<span class='badge badge-danger'>10.05.2023 7:52:24 PM</span>
+<span class='badge badge-default'>00:00:04:951</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -199,16 +190,30 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:24:05 PM</td>
+        <td>7:52:19 PM</td>
         <td>
-          verifySearchWithValidProduct started executing
+          verifyRegisteringAnAccountWithMandatoryFields started executing
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:24:06 PM</td>
+        <td>7:52:21 PM</td>
         <td>
-          verifySearchWithValidProduct got successfully executed
+          verifyLoginWithInvalidCredentials got successfully executed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:52:21 PM</td>
+        <td>
+          verifyRegisteringAnAccountWithMandatoryFields got successfully executed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:52:24 PM</td>
+        <td>
+          verifySearchWithValidProductAfterLogin got successfully executed
         </td>
       </tr>
   </tbody>
@@ -221,9 +226,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">verifyRegisteringAccountByProvidingAllFields</p>
+            <p class="name">verifySearchWithValidProduct</p>
             <p class="text-sm">
-              <span>5:24:18 PM</span> / <span>00:00:01:463</span>
+              <span>7:52:53 PM</span> / <span>00:00:02:870</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -231,10 +236,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyRegisteringAccountByProvidingAllFields</h5>
-<span class='badge badge-success'>09.22.2023 5:24:18 PM</span>
-<span class='badge badge-danger'>09.22.2023 5:24:20 PM</span>
-<span class='badge badge-default'>00:00:01:463</span>
+<h5 class="test-status text-pass">verifySearchWithValidProduct</h5>
+<span class='badge badge-success'>10.05.2023 7:52:53 PM</span>
+<span class='badge badge-danger'>10.05.2023 7:52:56 PM</span>
+<span class='badge badge-default'>00:00:02:870</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -246,16 +251,16 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:24:18 PM</td>
+        <td>7:52:53 PM</td>
         <td>
-          verifyRegisteringAccountByProvidingAllFields started executing
+          verifySearchWithValidProduct started executing
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:24:20 PM</td>
+        <td>7:52:56 PM</td>
         <td>
-          verifyRegisteringAccountByProvidingAllFields got successfully executed
+          verifySearchWithValidProduct got successfully executed
         </td>
       </tr>
   </tbody>
@@ -268,9 +273,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">verifyLoginWithInvalidCredentials</p>
+            <p class="name">verifyRegisteringAccountByProvidingAllFields</p>
             <p class="text-sm">
-              <span>5:24:31 PM</span> / <span>00:00:01:230</span>
+              <span>7:52:57 PM</span> / <span>00:00:00:001</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -278,10 +283,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyLoginWithInvalidCredentials</h5>
-<span class='badge badge-success'>09.22.2023 5:24:31 PM</span>
-<span class='badge badge-danger'>09.22.2023 5:24:33 PM</span>
-<span class='badge badge-default'>00:00:01:230</span>
+<h5 class="test-status text-pass">verifyRegisteringAccountByProvidingAllFields</h5>
+<span class='badge badge-success'>10.05.2023 7:52:57 PM</span>
+<span class='badge badge-danger'>10.05.2023 7:52:57 PM</span>
+<span class='badge badge-default'>00:00:00:001</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -293,16 +298,9 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:24:31 PM</td>
+        <td>7:52:57 PM</td>
         <td>
-          verifyLoginWithInvalidCredentials started executing
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:24:33 PM</td>
-        <td>
-          verifyLoginWithInvalidCredentials got successfully executed
+          verifyRegisteringAccountByProvidingAllFields started executing
         </td>
       </tr>
   </tbody>
@@ -310,53 +308,82 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="skip" test-id="6"
+        <li class="test-item"  status="fail" test-id="6"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">verifySearchWithInvalidProduct</p>
+            <p class="name">verifyLoginWithInvalidEmailAndValidPassword</p>
             <p class="text-sm">
-              <span>5:24:46 PM</span> / <span>00:00:00:004</span>
-              <span class="badge skip-bg log float-right">Skip</span>
+              <span>7:53:04 PM</span> / <span>00:00:06:987</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">verifySearchWithInvalidProduct</h5>
-<span class='badge badge-success'>09.22.2023 5:24:46 PM</span>
-<span class='badge badge-danger'>09.22.2023 5:24:46 PM</span>
-<span class='badge badge-default'>00:00:00:004</span>
+<h5 class="test-status text-fail">verifyLoginWithInvalidEmailAndValidPassword</h5>
+<span class='badge badge-success'>10.05.2023 7:53:04 PM</span>
+<span class='badge badge-danger'>10.05.2023 7:53:11 PM</span>
+<span class='badge badge-default'>00:00:06:987</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 </div>
-</div><div class="detail-body mt-4">
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='C:\Users\DHEERENDRA\git\TUTORIAL\Screenshots\verifyRegisteringAccountByProvidingAllFields.png' src="C:\Users\DHEERENDRA\git\TUTORIAL\Screenshots\verifyRegisteringAccountByProvidingAllFields.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:24:46 PM</td>
+        <td>7:53:04 PM</td>
         <td>
-          verifySearchWithInvalidProduct started executing
+          verifyLoginWithInvalidEmailAndValidPassword started executing
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:24:46 PM</td>
+        <td>7:53:05 PM</td>
         <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: Account Success page is not displayed expected [Your Account Has Been Created!] but found [Register Account]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at com.tutorialsninja.qa.testcases.RegisterTest.verifyRegisteringAccountByProvidingAllFields(RegisterTest.java:57)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+</textarea>
           
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>5:24:46 PM</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>7:53:05 PM</td>
         <td>
-          verifySearchWithInvalidProduct got skipped
+          verifyRegisteringAccountByProvidingAllFields got failed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:53:11 PM</td>
+        <td>
+          verifyLoginWithInvalidEmailAndValidPassword got successfully executed
         </td>
       </tr>
   </tbody>
@@ -369,9 +396,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">verifyRegisteringAccountWithExistingEmailAddress</p>
+            <p class="name">verifySearchWithInvalidProduct</p>
             <p class="text-sm">
-              <span>5:24:58 PM</span> / <span>00:00:02:418</span>
+              <span>7:53:16 PM</span> / <span>00:00:01:562</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -379,10 +406,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyRegisteringAccountWithExistingEmailAddress</h5>
-<span class='badge badge-success'>09.22.2023 5:24:58 PM</span>
-<span class='badge badge-danger'>09.22.2023 5:25:01 PM</span>
-<span class='badge badge-default'>00:00:02:418</span>
+<h5 class="test-status text-pass">verifySearchWithInvalidProduct</h5>
+<span class='badge badge-success'>10.05.2023 7:53:16 PM</span>
+<span class='badge badge-danger'>10.05.2023 7:53:17 PM</span>
+<span class='badge badge-default'>00:00:01:562</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -394,16 +421,16 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:24:58 PM</td>
+        <td>7:53:16 PM</td>
         <td>
-          verifyRegisteringAccountWithExistingEmailAddress started executing
+          verifySearchWithInvalidProduct started executing
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:25:01 PM</td>
+        <td>7:53:17 PM</td>
         <td>
-          verifyRegisteringAccountWithExistingEmailAddress got successfully executed
+          verifySearchWithInvalidProduct got successfully executed
         </td>
       </tr>
   </tbody>
@@ -411,25 +438,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="skip" test-id="8"
+        <li class="test-item"  status="pass" test-id="8"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">verifyLoginWithInvalidEmailAndValidPassword</p>
+            <p class="name">verifyRegisteringAccountWithExistingEmailAddress</p>
             <p class="text-sm">
-              <span>5:25:14 PM</span> / <span>00:00:00:003</span>
-              <span class="badge skip-bg log float-right">Skip</span>
+              <span>7:53:25 PM</span> / <span>00:00:02:699</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">verifyLoginWithInvalidEmailAndValidPassword</h5>
-<span class='badge badge-success'>09.22.2023 5:25:14 PM</span>
-<span class='badge badge-danger'>09.22.2023 5:25:14 PM</span>
-<span class='badge badge-default'>00:00:00:003</span>
+<h5 class="test-status text-pass">verifyRegisteringAccountWithExistingEmailAddress</h5>
+<span class='badge badge-success'>10.05.2023 7:53:25 PM</span>
+<span class='badge badge-danger'>10.05.2023 7:53:28 PM</span>
+<span class='badge badge-default'>00:00:02:699</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -441,23 +468,16 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:25:14 PM</td>
+        <td>7:53:25 PM</td>
         <td>
-          verifyLoginWithInvalidEmailAndValidPassword started executing
+          verifyRegisteringAccountWithExistingEmailAddress started executing
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:25:14 PM</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:53:28 PM</td>
         <td>
-          
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>5:25:14 PM</td>
-        <td>
-          verifyLoginWithInvalidEmailAndValidPassword got skipped
+          verifyRegisteringAccountWithExistingEmailAddress got successfully executed
         </td>
       </tr>
   </tbody>
@@ -470,9 +490,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">verifyRegisteringAccountWithoutFillingAnyDetails</p>
+            <p class="name">verifyLoginWithValidEmailAndInvalidPassword</p>
             <p class="text-sm">
-              <span>5:25:25 PM</span> / <span>00:00:00:802</span>
+              <span>7:53:36 PM</span> / <span>00:00:02:717</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -480,10 +500,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">verifyRegisteringAccountWithoutFillingAnyDetails</h5>
-<span class='badge badge-success'>09.22.2023 5:25:25 PM</span>
-<span class='badge badge-danger'>09.22.2023 5:25:26 PM</span>
-<span class='badge badge-default'>00:00:00:802</span>
+<h5 class="test-status text-pass">verifyLoginWithValidEmailAndInvalidPassword</h5>
+<span class='badge badge-success'>10.05.2023 7:53:36 PM</span>
+<span class='badge badge-danger'>10.05.2023 7:53:39 PM</span>
+<span class='badge badge-default'>00:00:02:717</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -495,16 +515,16 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:25:25 PM</td>
+        <td>7:53:36 PM</td>
         <td>
-          verifyRegisteringAccountWithoutFillingAnyDetails started executing
+          verifyLoginWithValidEmailAndInvalidPassword started executing
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>5:25:26 PM</td>
+        <td>7:53:39 PM</td>
         <td>
-          verifyRegisteringAccountWithoutFillingAnyDetails got successfully executed
+          verifyLoginWithValidEmailAndInvalidPassword got successfully executed
         </td>
       </tr>
   </tbody>
@@ -512,25 +532,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="skip" test-id="10"
+        <li class="test-item"  status="pass" test-id="10"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">verifyLoginWithValidEmailAndInvalidPassword</p>
+            <p class="name">verifySearchWithoutAnyProduct</p>
             <p class="text-sm">
-              <span>5:25:28 PM</span> / <span>00:00:00:003</span>
-              <span class="badge skip-bg log float-right">Skip</span>
+              <span>7:53:44 PM</span> / <span>00:00:00:966</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">verifyLoginWithValidEmailAndInvalidPassword</h5>
-<span class='badge badge-success'>09.22.2023 5:25:28 PM</span>
-<span class='badge badge-danger'>09.22.2023 5:25:28 PM</span>
-<span class='badge badge-default'>00:00:00:003</span>
+<h5 class="test-status text-pass">verifySearchWithoutAnyProduct</h5>
+<span class='badge badge-success'>10.05.2023 7:53:44 PM</span>
+<span class='badge badge-danger'>10.05.2023 7:53:45 PM</span>
+<span class='badge badge-default'>00:00:00:966</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -542,23 +562,16 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:25:28 PM</td>
+        <td>7:53:44 PM</td>
         <td>
-          verifyLoginWithValidEmailAndInvalidPassword started executing
+          verifySearchWithoutAnyProduct started executing
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:25:28 PM</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:53:45 PM</td>
         <td>
-          
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>5:25:28 PM</td>
-        <td>
-          verifyLoginWithValidEmailAndInvalidPassword got skipped
+          verifySearchWithoutAnyProduct got successfully executed
         </td>
       </tr>
   </tbody>
@@ -566,25 +579,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="skip" test-id="11"
+        <li class="test-item"  status="pass" test-id="11"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">verifyLoginWithoutProvidingCredentials</p>
+            <p class="name">verifyRegisteringAccountWithoutFillingAnyDetails</p>
             <p class="text-sm">
-              <span>5:25:28 PM</span> / <span>00:00:00:014</span>
-              <span class="badge skip-bg log float-right">Skip</span>
+              <span>7:54:00 PM</span> / <span>00:00:04:068</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">verifyLoginWithoutProvidingCredentials</h5>
-<span class='badge badge-success'>09.22.2023 5:25:28 PM</span>
-<span class='badge badge-danger'>09.22.2023 5:25:28 PM</span>
-<span class='badge badge-default'>00:00:00:014</span>
+<h5 class="test-status text-pass">verifyRegisteringAccountWithoutFillingAnyDetails</h5>
+<span class='badge badge-success'>10.05.2023 7:54:00 PM</span>
+<span class='badge badge-danger'>10.05.2023 7:54:04 PM</span>
+<span class='badge badge-default'>00:00:04:068</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -596,37 +609,63 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>5:25:28 PM</td>
+        <td>7:54:00 PM</td>
+        <td>
+          verifyRegisteringAccountWithoutFillingAnyDetails started executing
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:54:04 PM</td>
+        <td>
+          verifyRegisteringAccountWithoutFillingAnyDetails got successfully executed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="12"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">verifyLoginWithoutProvidingCredentials</p>
+            <p class="text-sm">
+              <span>7:54:07 PM</span> / <span>00:00:00:721</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">verifyLoginWithoutProvidingCredentials</h5>
+<span class='badge badge-success'>10.05.2023 7:54:07 PM</span>
+<span class='badge badge-danger'>10.05.2023 7:54:08 PM</span>
+<span class='badge badge-default'>00:00:00:721</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:54:07 PM</td>
         <td>
           verifyLoginWithoutProvidingCredentials started executing
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:25:28 PM</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:54:08 PM</td>
         <td>
-          
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>5:25:28 PM</td>
-        <td>
-          verifyLoginWithoutProvidingCredentials got skipped
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>5:25:28 PM</td>
-        <td>
-          
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>5:25:28 PM</td>
-        <td>
-          verifySearchWithoutAnyProduct got skipped
+          verifyLoginWithoutProvidingCredentials got successfully executed
         </td>
       </tr>
   </tbody>
@@ -643,30 +682,79 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="container-fluid p-4 view dashboard-view">
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:53:04 PM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>verifyLoginWithInvalidEmailAndValidPassword</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
 <div class="row">
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>22/09/2023 05:23:17</h3>
+<h3>05/10/2023 07:51:49</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>22/09/2023 05:25:29</h3>
+<h3>05/10/2023 07:54:10</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>7</h3>
+<h3>11</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -682,13 +770,13 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='63%'>
-<b>7</b> tests passed
+<div><small data-tooltip='91%'>
+<b>11</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> tests failed,
-<b>4</b> skipped, <b data-tooltip='0%'>0</b> others
+<small data-tooltip='8%'><b>1</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
 </div>
@@ -705,10 +793,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='25%'><b>7</b> events passed</small></div>
+<div><small data-tooltip='44%'><b>11</b> events passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> events failed,
-<b data-tooltip='%'>21</b> others
+<small data-tooltip='4%'><b>1</b> events failed,
+<b data-tooltip='%'>13</b> others
 </small>
 </div>
 </div>
@@ -724,7 +812,7 @@
 </div></div>
 <script>
 var timeline = {
-"verifyRegisteringAnAccountWithMandatoryFields":3.312,"verifyLoginWithValidCredentials":0.855,"verifySearchWithValidProduct":0.665,"verifyRegisteringAccountByProvidingAllFields":1.463,"verifyLoginWithInvalidCredentials":1.23,"verifySearchWithInvalidProduct":0.004,"verifyRegisteringAccountWithExistingEmailAddress":2.418,"verifyLoginWithInvalidEmailAndValidPassword":0.003,"verifyRegisteringAccountWithoutFillingAnyDetails":0.802,"verifyLoginWithValidEmailAndInvalidPassword":0.003,"verifyLoginWithoutProvidingCredentials":0.014
+"verifySearchWithValidProductAfterLogin":0.008,"verifyLoginWithInvalidCredentials":0,"verifyRegisteringAnAccountWithMandatoryFields":4.951,"verifySearchWithValidProduct":2.87,"verifyRegisteringAccountByProvidingAllFields":0.001,"verifyLoginWithInvalidEmailAndValidPassword":6.987,"verifySearchWithInvalidProduct":1.562,"verifyRegisteringAccountWithExistingEmailAddress":2.699,"verifyLoginWithValidEmailAndInvalidPassword":2.717,"verifySearchWithoutAnyProduct":0.966,"verifyRegisteringAccountWithoutFillingAnyDetails":4.068,"verifyLoginWithoutProvidingCredentials":0.721
 };
 </script>
 <div class="row">
@@ -771,10 +859,10 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 7,
-failParent: 0,
+passParent: 11,
+failParent: 1,
 warningParent: 0,
-skipParent: 4,
+skipParent: 0,
 childCount: 5,
 passChild: 0,
 failChild: 0,
@@ -788,11 +876,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 7,
-failEvents: 0,
+passEvents: 11,
+failEvents: 1,
 warningEvents: 0,
-skipEvents: 5,
-infoEvents: 16
+skipEvents: 0,
+infoEvents: 13
 };
 </script>        </div>
       </div>
