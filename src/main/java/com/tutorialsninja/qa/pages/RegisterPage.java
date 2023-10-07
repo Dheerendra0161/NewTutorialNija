@@ -57,6 +57,7 @@ public class RegisterPage {
 	@FindBy(xpath="//input[@id='input-password']/following-sibling::div")
 	private WebElement passwordWarning;
 
+
 	
 	public RegisterPage(WebDriver driver) {
 		

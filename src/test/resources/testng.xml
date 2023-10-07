@@ -30,7 +30,7 @@
 		-->
 
 		<classes>
-			<class name="com.tutorialsninja.qa.testcases.RegisterTest" />
+		<class name="com.tutorialsninja.qa.testcases.RegisterTest" />
 			<class name="com.tutorialsninja.qa.testcases.LoginTest">
 				<methods>
 					<exclude name="verifyLoginWithValidCredentials"></exclude>
