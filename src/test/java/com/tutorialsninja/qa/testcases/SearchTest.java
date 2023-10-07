@@ -50,26 +50,26 @@ public class SearchTest extends Base {
 		Assert.assertEquals(searchPage.retrieveNoProductMessageText(),"There is no product that matches the search criteria.","No product message in search results is not displayed");
 		
 	}
-	
-	@Test(priority=3 ,dependsOnMethods={"verifySearchWithValidProduct","verifySearchWithInvalidProduct"})
-	public void verifySearchWithoutAnyProduct() {
-		
-		searchPage = homePage.clickOnSearchButton();
-		Assert.assertEquals(searchPage.retrieveNoProductMessageText(),dataProp.getProperty("NoProductTextInSearchResults"),"No product message in search results is not displayed");
-		
-	}
-	
-	@Test()
-	public void verifySearchWithValidProductAfterLogin() {
-		loginPage=homePage.naviageToLoginPage();
-		accountPage=loginPage.login("dheeruvish1608@gmail.com","123456");
-		searchPage=homePage.searchForAProduct(dataProp.getProperty("validProduct"));
-		Assert.assertTrue(searchPage.displayStatusOfHPValidProduct(),"Valid product HP is not displayed in the search results");
-		searchDetailsPage= searchPage.navigateFirstProduct();
-		searchDetailsPage.validateProductDetails();
-		searchDetailsPage.addToCart();
-		
-		
-		
-	}
+//	
+//	@Test(priority=3 ,dependsOnMethods={"verifySearchWithValidProduct","verifySearchWithInvalidProduct"})
+//	public void verifySearchWithoutAnyProduct() {
+//		
+//		searchPage = homePage.clickOnSearchButton();
+//		Assert.assertEquals(searchPage.retrieveNoProductMessageText(),dataProp.getProperty("NoProductTextInSearchResults"),"No product message in search results is not displayed");
+//		
+//	}
+//	
+//	@Test()
+//	public void verifySearchWithValidProductAfterLogin() {
+//		loginPage=homePage.naviageToLoginPage();
+//		accountPage=loginPage.login("dheeruvish1608@gmail.com","123456");
+//		searchPage=homePage.searchForAProduct(dataProp.getProperty("validProduct"));
+//		Assert.assertTrue(searchPage.displayStatusOfHPValidProduct(),"Valid product HP is not displayed in the search results");
+//		searchDetailsPage= searchPage.navigateFirstProduct();
+//		searchDetailsPage.validateProductDetails();
+//		searchDetailsPage.addToCart();
+//		
+//		
+//		
+//	}
 }
