@@ -6,20 +6,11 @@
 		<listener class-name="com.tutorialsninja.qa.listeners.MyListeners" />
 	</listeners>
 
-	<!-- 
-	<test name="Register">
-		<groups>
-			<run>
-				<include name="smoke"></include>
-				<include name="sanity"></include>
-			</run>
-		</groups>
-	</test>
-	-->
+	
 
 	<test name="TutorialsNinja Parallel Tests" parallel="classes"
 		thread-count="2">
-		 	
+
 		<!-- 
 		<groups>
 			<dependencies>
@@ -30,7 +21,7 @@
 		-->
 
 		<classes>
-		<class name="com.tutorialsninja.qa.testcases.RegisterTest" />
+			<class name="com.tutorialsninja.qa.testcases.RegisterTest" />
 			<class name="com.tutorialsninja.qa.testcases.LoginTest">
 				<methods>
 					<exclude name="verifyLoginWithValidCredentials"></exclude>

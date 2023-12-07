@@ -14,7 +14,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.io.FileHandler;
-
+//Created reusable method in the Utilities package.
 public class Utilities {
 	
 	public static final int IMPLICIT_WAIT_TIME=10;
@@ -27,6 +27,7 @@ public class Utilities {
 		return "dheeruvish678"+timestamp+"@gmail.com";
 		
 	}
+	
 	
 	public static Object[][] getTestDataFromExcel(String sheetName) {
 		File excelFile = new File(System.getProperty("user.dir")+"\\src\\main\\java\\com\\tutorialsninja\\qa\\testdata\\TutorialsNinjaTestData.xlsx");
@@ -83,6 +84,7 @@ public class Utilities {
 		String destinationScreenshotPath = System.getProperty("user.dir")+"\\Screenshots\\"+testName+".png";
 		
 		try {
+			// FileUtils.copyFile(srcScreenshot, new File(destinationScreenshotPath));
 			FileHandler.copy(srcScreenshot,new File(destinationScreenshotPath));
 		} catch (IOException e) {
 			e.printStackTrace();

@@ -20,6 +20,8 @@ import com.tutorialsninja.qa.pages.SearchDetailsPage;
 import com.tutorialsninja.qa.pages.SearchPage;
 import com.tutorialsninja.qa.utils.Utilities;
 
+
+
 public class Base {
 
 	WebDriver driver;
@@ -66,6 +68,7 @@ public class Base {
 		if (browserName.equalsIgnoreCase("chrome")) {
 
 			driver = new ChromeDriver();
+			
 
 		} else if (browserName.equalsIgnoreCase("firefox")) {
 

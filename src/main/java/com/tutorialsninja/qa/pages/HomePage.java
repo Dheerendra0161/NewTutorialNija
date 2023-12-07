@@ -24,7 +24,7 @@ public class HomePage {
 
 	@FindBy(xpath = "//div[@id='search']/descendant::button")
 	private WebElement searchButton;
-	
+
 	@FindBy(xpath = "//div[@id='search']/descendant::button")
 	private WebElement searchButton1;
 
@@ -33,10 +33,8 @@ public class HomePage {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	
 
 	// Actions
-
 	public RegisterPage navigateToRegisterPage() {
 		myAccountDropMenu.click();
 		registerOption.click();
@@ -60,5 +58,4 @@ public class HomePage {
 		return new SearchPage(driver);
 	}
 
-	
 }
